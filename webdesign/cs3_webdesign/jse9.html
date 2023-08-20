@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ImgBig</title>
+</head>
+<body>
+    <img id="demo" src="image/Rabbit.PNG"  alt="This is a rabbit pic." height="200px" width="`150px">
+
+    <script>
+
+        document.getElementById("demo").onmouseover=function(){bigImg()};
+        document.getElementById("demo").onmouseout=function(){normalImg()};
+
+        function bigImg(){
+            document.getElementById("demo").style.width='140px';
+            document.getElementById("demo").style.height='90px';
+        }
+
+        function normalImg(){
+            document.getElementById("demo").style.width='120px';
+            document.getElementById("demo").style.height='80px';
+        }
+    </script>
+</body>
+</html>
